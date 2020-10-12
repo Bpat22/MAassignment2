@@ -83,7 +83,7 @@ public class SolutionTest {
     	accountHolder.addSavingsAccount(10000);
     	
         assertEquals("Sam", accountHolder.getFirstName());    	
-        assertEquals("John", accountHolder.getMiddleName());       
+        assertEquals("John", accountHolder.getMiddletName());       
         assertEquals("Houston", accountHolder.getLastName());  
         assertEquals("633378899", accountHolder.getSSN());       
         assertEquals(1000, accountHolder.getCheckingBalance(),0);    
@@ -135,9 +135,9 @@ public class SolutionTest {
     	
     	accountHolder.addCDAccount(cdAccount);
     	
-        assertEquals(1, accountHolder.getCDAccounts()[0].getTerm());    	
-        assertEquals(1.8/100, accountHolder.getCDAccounts()[0].getInterestRate(),0); 
-        assertEquals(5000, accountHolder.getCDAccounts()[0].getBalance(),0);    	
+        assertEquals(1, accountHolder.getCDAccount()[0].getTerm());    	
+        assertEquals(1.8/100, accountHolder.getCDAccount()[0].getInterestRate(),0); 
+        assertEquals(5000, accountHolder.getCDAccount()[0].getBalance(),0);    	
     	
     }
     
@@ -151,7 +151,7 @@ public class SolutionTest {
     	MeritBank.addAccountHolder(accountHolder);
     	
         assertEquals("Sam", MeritBank.getAccountHolders()[0].getFirstName());    	
-        assertEquals("John", MeritBank.getAccountHolders()[0].getMiddleName());       
+        assertEquals("John", MeritBank.getAccountHolders()[0].getMiddletName());       
         assertEquals("Houston", MeritBank.getAccountHolders()[0].getLastName());  
         assertEquals("633378899", MeritBank.getAccountHolders()[0].getSSN());       
         assertEquals(1000, MeritBank.getAccountHolders()[0].getCheckingBalance(),0);    
